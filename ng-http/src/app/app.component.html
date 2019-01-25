@@ -1,0 +1,23 @@
+<button (click)="getUser()">user</button>
+<ul>
+  <li *ngFor="let value of user">
+    name: {{value.name}}
+    email: {{value.email}}
+  </li>
+</ul>
+<button (click)="getPost()">posts</button>
+<!-- <ul>
+  <li *ngFor="let value of post">
+    title: {{value.title}}
+    id: {{value.id}}
+  </li>
+</ul> -->
+<table>
+  <thead>
+      <th>id</th><th>title</th>
+  </thead>
+  <tbody *ngFor="let value of post">
+    
+    <td>{{value.id}}</td><td>{{value.title}}</td>
+  </tbody>
+</table>

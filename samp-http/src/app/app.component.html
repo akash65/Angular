@@ -1,0 +1,29 @@
+ <div>
+   <h3>Http service</h3>
+   <button (click)="getTodo()">Todo</button>
+   <button (click)="getPost()">posts</button>
+   <button (click)="postData()">postData</button>
+   <button (click)="put()">put</button>
+
+   <!-- <ul>
+     <li *ngFor="let val of todo">Id:{{val.id}},
+       Title:{{val.title}}
+     </li>
+   </ul> -->
+   <!-- <ul>
+     <li *ngFor="let postValue of post">
+       {{postValue.id}}
+      {{postValue.name}}
+     </li>
+   </ul> -->
+   <ul>
+      <li *ngFor="let pValue of pData ">
+        {{pValue.title}},{{pValue.body}},{{pValue.userId}}
+      </li>
+    </ul>
+ </div>
+
+ <!-- {{pData | json}} -->
+ 
+{{post | json}}
+ 
