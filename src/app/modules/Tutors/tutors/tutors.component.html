@@ -1,0 +1,15 @@
+<div style="text-align:center">
+  <h2>Tutors List</h2>
+    <a routerLink="/students" routerLinkActive="active">Students</a>&nbsp;&nbsp; 
+    <a routerLink="/tutors" routerLinkActive="active">Tutors</a>&nbsp;&nbsp; 
+  <button (click)="getTutor()">AddTutor</button>
+  <div class="row">
+      <div class="column" *ngFor="let val of tutorDetails">
+        <div class="card">
+          <h3>{{val.id}}</h3>
+          <p>{{val.first_name}}</p>
+          <p>{{val.last_name}}</p>
+        </div>&nbsp;&nbsp;
+      </div>
+  </div>
+</div>

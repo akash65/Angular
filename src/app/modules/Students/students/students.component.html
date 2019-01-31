@@ -1,0 +1,31 @@
+<div style="text-align:center">
+      <h2>Student List</h2>
+      <a routerLink="/students" routerLinkActive="active-link">Students</a>&nbsp;&nbsp; 
+      <a routerLink="/tutors" routerLinkActive="active-link">Tutors</a>&nbsp; &nbsp; 
+
+      <button type="button" class="btn btn-info btn-lg" (click)="open()">Open</button>
+      <div class="backdrop" [ngStyle]="{'display':display}"></div>
+
+  <div class="row">
+      <div class="column" *ngFor="let val of StudentDetails">
+        <div class="card">
+          <h3>{{val.id}}</h3>
+          <p>{{val.first_name}}</p>
+          <p>{{val.last_name}}</p>
+        </div>&nbsp;&nbsp;
+        <p>{{val.fName}}</p>
+        <p>{{val.lName}}</p>
+      </div>
+  </div>
+
+  <div>
+    <label>first_name</label>
+    <input type="text" [(ngModel)]="fName"/>
+    <label>last_name</label>
+    <input type="text" [(ngModel)]="lName"/>
+    <button (click)="getStudent()">Addstudent</button>
+  </div>
+
+</div>
+<router-outlet></router-outlet>
+

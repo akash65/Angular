@@ -1,0 +1,35 @@
+<div style="text-align:center ">
+  <h2>Login Page</h2><br>
+  <!-- <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" formControlName="name" />
+      <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+        <div *ngIf="f.username.errors.required">Username is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" formControlName="password" />
+      <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required">Password is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <button [disabled]="loading" class="btn btn-primary">Login</button>
+    </div>
+  </form> -->
+<div style="margin:auto;width: 600px;">
+    <label>Name: </label>
+    <input type="text" [(ngModel)]="name"/><br>
+    <label>Password: </label>
+    <input type="text" [(ngModel)]="Password"/><br>
+    <button type="submit" (click)="validateLogin()">submit</button>
+  </div>
+
+</div>
+
+<mat-card>
+  <mat-card-title>hello</mat-card-title>
+</mat-card>
+
